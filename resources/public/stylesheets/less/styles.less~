@@ -1,0 +1,48 @@
+@big-font: 45px;
+@medium-font: 30px;
+@small-font: 18px;
+
+body {
+        font-family: Raleway;
+}
+
+#name {
+        font-size: @big-font;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 1px;
+        @media only screen and (max-width: 767px) {
+               font-size: @medium-font;
+            
+        }
+}
+
+#title {
+       font-size: @medium-font;
+       @media only screen and (max-width: 767px) {
+              font-size: @small-font;
+       }
+}
+
+
+#content {
+       margin-top: 20px !important;
+}
+
+
+#overview {
+      @media only screen and (max-width: 767px) {
+             float:left;
+      }
+}
+
+.centered {
+//     text-align: center;
+}
+
+#photo {
+     .centered;
+}
+
+
+

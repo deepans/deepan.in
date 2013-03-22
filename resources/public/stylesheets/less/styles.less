@@ -1,0 +1,47 @@
+@big-font: 45px;
+@medium-font: 30px;
+@small-font: 18px;
+@tiny-font: 13px;
+@line-height: 1.3;
+
+body {
+        font-family: Raleway;
+}
+
+.para (@big-screen-font, @small-screen-font){
+        font-size: @big-screen-font;
+        line-height: @line-height;
+        margin-bottom: 1px;
+        @media only screen and (max-width: 767px) {
+               font-size: @small-screen-font;            
+        }
+}
+
+#name {
+        font-weight: bold;
+        .para(@big-font, @medium-font); 
+}
+
+#title {
+       .para(@medium-font, @small-font);
+}
+
+#location {
+       .para(@small-font, @tiny-font);
+}
+
+
+#content{
+       margin-top: 20px !important;
+}
+
+
+#overview {
+      @media only screen and (max-width: 767px) {
+             float:left;
+      }
+}
+
+
+
+
